@@ -274,7 +274,7 @@ import matplotlib.pyplot as plt
 import subprocess
 
 # Run the setup.sh script to download the spacy model
-subprocess.run(['./setup.sh'], check=True)
+subprocess.run('python', '-m', 'spacy', 'download', 'en_core_web_sm'], check=True)
 
 
 # Load SpaCy model
