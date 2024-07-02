@@ -271,6 +271,11 @@ from pymongo import MongoClient
 import mysql.connector
 import psycopg2
 import matplotlib.pyplot as plt
+import subprocess
+
+# Run the setup.sh script to download the spacy model
+subprocess.run(['./setup.sh'], check=True)
+
 
 # Load SpaCy model
 nlp = spacy.load("en_core_web_sm")
